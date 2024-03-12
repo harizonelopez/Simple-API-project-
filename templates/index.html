@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API-project</title>
+    <title>API-Project-App</title>
     <style>
         body {
             display: flex;
@@ -86,19 +86,19 @@
         <header> Marvel Cinematic Universe {MCU} </header>
 
         <section align="center">
-            <h5> {{ message }} </h5>
+            <h5> {{ tittle_message }} </h5>
         </section>
 
         <section>
             <ul>
-                {% for user in users %}
-                    <h6>{{ user.id }} {{ user.name }} - Age: {{ user.age }}</h6>
+                {% for i in players %}
+                    <h6>{{ players.id }} {{ players.name }} - Age: {{ players.age }}</h6>
                 {% endfor %}
             </ul>
         </section>
         
         <footer>
-            <p>&copy; 2024  D.N.I API project</p>
+            <p>&copy; 2024  D.N.I API Project</p>
         </footer>
 
     </section>
