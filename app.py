@@ -5,7 +5,7 @@ app.secret_key = ('aladinh00-10montext')
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-    message = "Team Avengers"
+    title_message = "Team Avengers"
     
     users = [
         {'id': 1, 'name': 'Josh Brolin', 'age': 51},
