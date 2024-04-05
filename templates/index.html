@@ -7,7 +7,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API-Project-App</title>
     <style>
         body {
             display: flex;
@@ -27,10 +26,6 @@
             padding: 1em;
         }
 
-        h1, h2 {
-            color: #61dafb;
-        }
-
         h5 {
             line-height: 1.6;
             color: #FF1493;
@@ -40,12 +35,7 @@
             line-height: 1.6;
             color: green;
         }
-
-        h7 {
-            line-height: 1.6;
-            color: red;
-        }
-
+        
         p {
             line-height: 1.6;
             color: #a4acc4;
@@ -68,30 +58,20 @@
             bottom: 0;
             width: 65%;
         }
-
-        a {
-            color: #00FF00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            border-bottom: 2px solid #FF6347;
-        }
-
     </style>
 </head>
 
 <body>
     <section>
-        <header> Marvel Cinematic Universe {MCU} </header>
+        <header>Marvel Cinematic Universe {MCU}</header>
 
         <section align="center">
-            <h5> {{ tittle_message }} </h5>
+            <h5>{{ tittle_message }}</h5>
         </section>
 
         <section>
             <ul>
-                {% for i in players %}
+                {% for player in players %}
                     <h6>{{ players.id }} {{ players.name }} - Age: {{ players.age }}</h6>
                 {% endfor %}
             </ul>
