@@ -5,11 +5,11 @@ app.secret_key = ('aladinh00-10montext')
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-    tittle_message = "Team Avengers"
+    tittle_message = "The Avengers, Assemble"
     
     users = [
-        {'id': 1, 'name': 'Josh Brolin', 'age': 51},
-        {'id': 2, 'name': 'Brie Larson', 'age': 30},
+        {'id': 1, 'name': 'Josh Brolin', 'age': 67},
+        {'id': 2, 'name': 'Brie Larson', 'age': 35},
         {'id': 3, 'name': 'Chris Evans', 'age': 122},
         {'id': 4, 'name': 'Tony Stark', 'age': 32},
         {'id': 5, 'name': 'Paul Betany', 'age': 31},
@@ -23,7 +23,7 @@ def hello():
         {'id': 13, 'name': 'Chris Hemsworth', 'age': 102},
         {'id': 14, 'name': 'Steven Wong', 'age': 42},
         {'id': 15, 'name': 'Samuel L. Jackson', 'age': 66},
-        {'id': 16, 'name': 'Hugh Jackman', 'age': 110},
+        {'id': 16, 'name': 'Hugh Jackman', 'age': 502},
         {'id': 17, 'name': 'Ryan Reynolds', 'age': 55},
         {'id': 18, 'name': 'Stan Lee', 'age': 99},
         {'id': 19, 'name': 'Bradley Cooper', 'age': 23},
