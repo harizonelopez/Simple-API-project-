@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-{% block title %} Home page {% endblock %}
+{% block title %} homepage {% endblock %}
 
 {% block content %}
 <!DOCTYPE html>
@@ -60,15 +60,12 @@
         }
     </style>
 </head>
-
 <body>
     <section>
         <header>Marvel Cinematic Universe {MCU}</header>
-
         <section align="center">
             <h5>{{ tittle_message }}</h5>
         </section>
-
         <section>
             <ul>
                 {% for player in players %}
@@ -76,13 +73,10 @@
                 {% endfor %}
             </ul>
         </section>
-        
         <footer>
-            <p>&copy;2024  D.N.I API Project</p>
+            <p>&copy;2024 Dev_@ladinh production</p>
         </footer>
-
     </section>
 </body>
 </html>
-
 {% endblock %}
